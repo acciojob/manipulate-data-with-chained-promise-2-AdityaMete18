@@ -14,7 +14,7 @@ getdata().then((data)=>{
 	return new Promise((resolve)=>{
 		setTimeout(()=>{
 			let even = data.filter(num => num % 2===0);
-			output.innerHTML = even;
+			output.innerHTML =  JSON.stringify(even);;
 			resolve(even)
 		},1000)
 	})
@@ -22,7 +22,7 @@ getdata().then((data)=>{
 	return new Promise((resolve)=>{
 		setTimeout(()=>{
 			let double = data.map(num=>num*2);
-			output.innerHTML=double;
+			output.innerHTML=JSON.stringify(double);
 			resolve(double)
 		},2000)
 	})
