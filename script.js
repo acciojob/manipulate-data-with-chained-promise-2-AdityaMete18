@@ -4,7 +4,7 @@ let output = document.getElementById("output");
 
 function getdata(){
 	return new Promise((resolve)=>{
-		setTimeOut(()=>{
+		setTimeout(()=>{
 			resolve([1,2,3,4]);
 		},3000)
 	})
